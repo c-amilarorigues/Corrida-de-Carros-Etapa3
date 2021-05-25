@@ -52,20 +52,20 @@ class Game {
       
       //var display_position = 100;
       
-      //index of the array
+      //índice da matriz
       var index = 0;
 
-      //x and y position of the cars
+      //posições x e y dos carros
       var x = 175 ;
       var y;
 
       for(var plr in allPlayers){
-        //add 1 to the index for every loop
+        //adicione 1 ao índice para cada loop
         index = index + 1 ;
 
-        //position the cars a little away from each other in x direction
+        //posicione os carros um pouco afastados um do outro na direção x
         x = x + 200;
-        //use data form the database to display the cars in y direction
+        //use os dados do banco de dados para exibir os carros na direção y
         y = displayHeight - allPlayers[plr].distance;
         cars[index-1].x = x;
         cars[index-1].y = y;
